@@ -6,6 +6,7 @@
     <title>Meu portifolio</title>
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -66,13 +67,13 @@
                 <div class="topico-primeiro">
                     Habilidades que Definem Minha Jornada Profissional
                 </div>
-                <p data-aos="fade-right">
+                <p data-aos="fade-right" data-aos-duration="1200" >
                     Com uma sólida base acadêmica e experiência prática, desenvolvi habilidades essenciais para a área de Tecnologia. Tenho conhecimentos em SAP e ABAP, e sou proficiente no desenvolvimento de dashboards em Power BI. Estou constantemente buscando aprimorar minhas habilidades e enfrentar novos desafios, com o objetivo de manter a excelência e impulsionar meu crescimento contínuo.
                 </p>
             </div>
             <div class="experiencia">
-                <div class="num">01</div>
-                <div class="exp">
+                <div class="num" data-aos="fade-left" data-aos-duration="1200" >01</div>
+                <div class="exp" data-aos="fade-left" data-aos-duration="1200">
                     Ano de <br> Experiência
                 </div>
             </div>
@@ -80,19 +81,19 @@
         <div class="caixas">
             <div class="caixa">
                 <div class="topico">HTML</div>
-                <div class="per">70%</div>
+                <div class="per" data-aos="fade-right" data-aos-duration="1200" >70%</div>
             </div>
             <div class="caixa">
                 <div class="topico">CSS</div>
-                <div class="per">60%</div>
+                <div class="per" data-aos="fade-right" data-aos-duration="1200" >60%</div>
             </div>
             <div class="caixa">
                 <div class="topico">ABAP</div>
-                <div class="per">50%</div>
+                <div class="per" data-aos="fade-right" data-aos-duration="1200" >50%</div>
             </div>
             <div class="caixa">
                 <div class="topico">Java</div>
-                <div class="per">30%</div>
+                <div class="per" data-aos="fade-right" data-aos-duration="1200" >30%</div>
             </div>
         </div>
     </div>
@@ -179,5 +180,11 @@
             &#169;2024 Todos os direitos reservados</span>
         </div>
       </footer>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init({ offset: 0 });
+      </script>
+      <script src="script.js"></script>
 </body>
 </html>
