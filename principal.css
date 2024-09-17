@@ -138,7 +138,7 @@ span{
 
 .home-img img {
     position: relative;
-    width: 25vw;
+    width: 30vw;
     border-radius: 50%;
     border: 0.3rem solid  #b56576; 
     box-shadow: 0 0.25px 10px  #b56576; 
@@ -275,6 +275,7 @@ section .content {
     width: 80%;
     margin: 0px auto;
     font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
 }
 
 .about .about-details {
@@ -373,6 +374,7 @@ section .button button:hover {
 /* Sessão Habilidades */
 .habilidades {
     background: black;
+    padding-top: 60px;
    
 }
 
@@ -453,29 +455,33 @@ section .button button:hover {
 }
 
 .habilidades .caixas {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .habilidades .caixa {
     width: calc(100% / 2 - 20px);
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .habilidades .caixa .topico {
-    font-size: 30px;
+    font-size: 25px;
     color:  #b56576;
 }
 
 .habilidades .caixa .per {
-    font-size: 60px;
+    font-size: 55px;
     color:  #b56576;
 }
 
 /*Sessão Meus Serviços*/
 
+.services{
+    padding-top: 40px;
+}
 .services .boxes{
     display: flex;
     flex-wrap: wrap;
@@ -493,6 +499,9 @@ section .button button:hover {
     color: white;
     transition: all 0.4s ease;
     font-size: 14px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 10px 15px#b56576 ;
 
 }
 
@@ -540,6 +549,7 @@ section .button button:hover {
 
 .contact{
     background-color: black;
+    padding-top: 150px;
 
 }
 .contact .content{
