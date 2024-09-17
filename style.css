@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+header{
+    margin-top: 20px;
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.cabecalho-nome{
+    font-size: 3rem;
+    color:  #b56576;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+.cabecalho-nome:hover{
+    transform: scale(1.1);
+}
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3 ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.nav-itens{
+    color:  #b56576;
+    border-bottom: 3px solid ;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left:3px solid  #b56576 ;
+        border-bottom:3px solid  #b56576 ;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color:  #b56576;
+        border-top: rgba(0,0,0,0.1);
+    }
+    .nav-itens{
+        display: block;
+    
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0 ;
+    
+    }
+    nav a:hover,
+    nav a.nav-itens{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid  #b56576;
+        
+    }
+
+}
+
+/*Sessão Principal*/
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+
+}
+
+.home-conteudo h1 {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+span{
+    color:  #b56576;
+}
+
+.home-conteudo h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.home-conteudo p{
+    font-size: 15px;
+}
+
+.home-img {
+    border-radius: 50%;
+    
+
+}
+
+.home-img img {
+    position: relative;
+    width: 30vw;
+    border-radius: 50%;
+    border: 0.3rem solid  #b56576; 
+    box-shadow: 0 0.25px 10px  #b56576; 
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+.icones-sociais a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid  #b56576;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin:3rem 1.5rem 3rem 0 ;
+    transition: 0.3s ease;
+    color: white;
+}
+.icones-sociais a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color:  #b56576;
+    box-shadow: 0 0 25px  #b56576;
+}
+.botao{
+    display: inline block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color:  #b56576;
+    letter-spacing: 0.3rem ;
+    font-weight: 600;
+    border: 2px solid  #b56576;
+    transition: 0.3 ease ;
+    cursor: pointer;
+
+}
+.botao:hover{
+    transform: scale3d(1.03);
+    background-color:  #b56576;
+    color:black;
+    box-shadow: 0 0 25px  #b56576;
+
+}
+.home-texto{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+
+}
+.home-texto span{
+    position: relative;
+
+}
+.home-texto span:before{
+    content: "Software Developer";
+    color:  #b56576;
+    animation: words 20s infinite;
+
+}
+.home-texto span:after{
+    content: "";
+    background-color: black;
+    position: relative;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+
+}
+@keyframes cursor{
+    to{
+        border-left: 3px solid  #b56576;
+
+    }
+}
+@keyframes words {
+    0%,20%{
+         content: "Abap/SAP";
+    }
+    21%,40%{
+        content: "Back-end";
+    }
+    41%,60%{
+        content: "Front-end";
+    }
+    61%,80%{
+        content: "Design";
+    }
+    81%,100%{
+        content: "Power BI";
+    }
+}
+
+@media(max-width:1000px){
+    .home{
+        gap: 4rem;
+
+    }
+}
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem ;
+    }
+    .home.home-conteudo h3{
+        font-size: 2.5rem;
+
+    }
+    .home.home-conteudo h1{
+        font-size: 5rem;
+
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+
+    }
+}
+
+/*Sessão Sobre Mim*/
+
+section .content {
+    width: 80%;
+    margin: 0px auto;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section .title span {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #b56576;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details .left {
+    width: 50%;
+}
+
+.about .left img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-details .right {
+    width: 50%;
+    margin-left: 50px;
+}
+
+section .topic {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about-details .right p {
+    text-align: justify;
+    color: white;
+    font-size: 14px;
+}
+
+section .button {
+    margin: 16px 0;
+}
+
+section .button button {
+
+    display: inline block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color:  #b56576;
+    letter-spacing: 0.3rem ;
+    font-weight: 600;
+    border: 2px solid  #b56576;
+    transition: 0.3 ease ;
+    cursor: pointer;
+    margin-top: 30px; 
+}
+
+section .button button:hover {
+    
+    transform: scale3d(1.03);
+    background-color:  #b56576;
+    color:black;
+    box-shadow: 0 0 25px  #b56576;
+
+}
+
+/* Sessão Habilidades */
+.habilidades {
+    background: black;
+    padding-top: 60px;
+   
+}
+
+.habilidades .conteudo {
+    padding: 20px 0;
+}
+
+.habilidades .titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.habilidades .titulo span {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.habilidades .titulo span::before,
+.habilidades .titulo span::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background:  #b56576;
+    left: 0;
+    bottom: 0;
+}
+
+.habilidades .titulo span::after {
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.habilidades .habilidades-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habilidades-detalhes .texto {
+    width: 50%;
+}
+.habilidades .topico-primeiro{
+    font-size: 26px;
+    color: #b56576;
+}
+
+
+.habilidades-detalhes p {
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.habilidades-detalhes .experiencia {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.habilidades-detalhes .experiencia .num {
+    color: #b56576;
+    font-size: 80px;
+}
+
+.habilidades-detalhes .experiencia .exp {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.habilidades .caixas {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.habilidades .caixa {
+    width: calc(100% / 2 - 20px);
+    margin: 10px 0;
+}
+
+.habilidades .caixa .topico {
+    font-size: 25px;
+    color:  #b56576;
+}
+
+.habilidades .caixa .per {
+    font-size: 55px;
+    color:  #b56576;
+}
+
+/*Sessão Meus Serviços*/
+
+.services{
+    padding-top: 40px;
+}
+.services .boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+    cursor: default;
+    color: white;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 10px 15px#b56576 ;
+
+}
+
+.services .boxes .box:hover{
+    background: #b56576;
+    color: #fff;
+
+}
+
+.services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background: #b56576;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+    
+}
+
+.boxes .box:hover .icon{
+    background-color: #fff;
+    color: #b56576;
+
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p{
+    color: white;
+    transition: all 0.4s ease;
+
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+
+    color: #fff;
+
+}
+
+/*Sessão Contato*/
+
+.contact{
+    background-color: black;
+    padding-top: 150px;
+
+}
+.contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+
+   
+
+}
+.contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+
+}
+
+footer {
+    background: #b56576;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+footer .texto span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+}
+
+footer .texto span a {
+    font-weight: 500;
+    color: #fff;
+}
+
+footer .texto span a:hover {
+    text-decoration: underline;
+}
+
