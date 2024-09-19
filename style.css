@@ -315,7 +315,8 @@ section .title span::after {
     transform: translateX(-50%);
 }
 .about .about-details .left {
-    width: 50%;
+    width: 40%;
+    margin-right: 50px;
 }
 
 .about .left img {
@@ -481,7 +482,7 @@ section .button button:hover {
     color:  #b56576;
 }
 
-/*Sessão Meus Serviços*/
+/*Sessão Meus Projetos*/
 
 .services{
     padding-top: 40px;
@@ -494,7 +495,7 @@ section .button button:hover {
 }
 .services .boxes .box {
     margin: 20px 0;
-    width: calc(100% / 3 - 20px);
+    /* width: calc(100% / 3 - 20px); */
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
