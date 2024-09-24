@@ -15,7 +15,7 @@ Meu nome é Maria Eduarda Lopes Constantino e este portfólio apresenta uma brev
 
 O portfólio está hospedado no GitHub Pages e pode ser acessado através do link abaixo:
 
-📌https://marialopesz.github.io/Portif-lioOFC/#home
+📌https://marialopesz.github.io/PortifolioOFC/
 
 ## Considerações Finais
 
